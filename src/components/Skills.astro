@@ -1,0 +1,98 @@
+---
+// Financial BI Specialist Skills Component
+// TODO: Prepare for i18n in next phase
+
+const SKILLS_CATEGORIES = {
+  dataEngineering: {
+    title: "Data Engineering",
+    icon: "⚙️",
+    skills: [
+      "Python (Pandas/Polars/NumPy)",
+      "Python uv (Package Manager)",
+      "SQL (PostgreSQL)",
+      "ETL Pipelines & Automation",
+      "Linux (Fedora)",
+      "Git & GitHub",
+    ],
+  },
+  financialAnalysis: {
+    title: "Financial Analysis",
+    icon: "📊",
+    skills: [
+      "Financial Reporting",
+      "ROI & Profitability Analysis",
+      "Budget Planning & Forecasting",
+      "Cost Control & Process Optimization",
+      "Business Intelligence Strategy",
+      "Data-Driven Decision Making",
+    ],
+  },
+  biVisualization: {
+    title: "BI & Visualization",
+    icon: "📈",
+    skills: [
+      "Power BI (Dashboards & Reports)",
+      "DAX (Data Analysis Expressions)",
+      "Data Modeling & Analysis",
+      "Real-time Data Sync",
+      "Excel Advanced (Formulas, Pivot Tables)",
+      "Interactive Storytelling",
+    ],
+  },
+  devStack: {
+    title: "Developer Stack",
+    icon: "💻",
+    skills: [
+      "Terminal/CLI",
+      "Linux/Fedora",
+      "Docker (basics)",
+      "CI/CD Awareness",
+      "Version Control (Git)",
+      "API Fundamentals",
+    ],
+  },
+}
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+  {
+    Object.entries(SKILLS_CATEGORIES).map(([key, category]) => (
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">{category.icon}</span>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white">
+            {category.title}
+          </h3>
+        </div>
+        <ul class="space-y-2">
+          {category.skills.map((skill) => (
+            <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+              <span class="text-yellow-500 dark:text-yellow-300">▸</span>
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  /* Optional: Add animation on scroll if needed */
+  @media (prefers-reduced-motion: no-preference) {
+    div {
+      animation: fadeInUp 0.6s ease-out;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

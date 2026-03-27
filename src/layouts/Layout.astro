@@ -3,6 +3,7 @@ import "@fontsource-variable/onest"
 
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
+// @ts-ignore - ViewTransitions available in Astro 4.4.5+
 import { ViewTransitions } from "astro:transitions"
 
 interface Props {
@@ -23,6 +24,14 @@ const { description, title } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="google-site-verification" content="wFLP-T74Kk92go5EWx8f2uHDdWMy-yLI3VXcLoJ2ZwQ" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Joaquin S. Cárdenas | Financial BI & Data Strategist" />
+    <meta property="og:description" content="Financial BI Specialist. Ex-KPMG #1 Training. +55% revenue growth. ETL, Python, Power BI, SQL expertise." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://joacoportfolioanalis.netlify.app" />
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Financial BI, Data Engineering, Power BI, Python, ETL, SQL, KPMG, Data Strategist" />
+    <meta name="author" content="Joaquin S. Cárdenas" />
     <ViewTransitions />
   </head>
 

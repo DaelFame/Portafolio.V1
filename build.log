@@ -1,0 +1,74 @@
+
+> porfolio-dev@0.0.1 build
+> astro check && astro build
+
+✘ [ERROR] The build was canceled
+
+00:30:25 Types generated 60ms
+00:30:25 [check] Getting diagnostics for Astro files in /run/media/jcotrina/Nuevo vol/git-repos/portafolio...
+languageId not found for file:///run/media/jcotrina/Nuevo%20vol/git-repos/portafolio/node_modules/%40fontsource-variable/onest/index.css
+languageId not found for file:///run/media/jcotrina/Nuevo%20vol/git-repos/portafolio/node_modules/%40fontsource-variable/onest/index.css
+[96msrc/components/Footer.astro[0m:[93m2[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'currentYear' is declared but its value is never read.
+
+[7m2[0m const currentYear = new Date().getFullYear()
+[7m [0m [93m      ~~~~~~~~~~~[0m
+
+[96msrc/components/Projects.astro[0m:[93m4[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'Tailwind' is declared but its value is never read.
+
+[7m4[0m import Tailwind from "./icons/Tailwind.astro"
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/components/Projects.astro[0m:[93m3[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'NextJS' is declared but its value is never read.
+
+[7m3[0m import NextJS from "./icons/NextJS.astro"
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/Skills.astro[0m:[93m59[0m:[93m45[0m - [93mwarning[0m[90m ts(6133): [0m'key' is declared but its value is never read.
+
+[7m59[0m     Object.entries(SKILLS_CATEGORIES).map(([key, category]) => (
+[7m  [0m [93m                                            ~~~[0m
+
+Result (33 files): 
+- 0 errors
+- 0 warnings
+- 4 hints
+
+✘ [ERROR] The build was canceled
+
+00:30:30 Types generated 63ms
+00:30:30 [build] output: "static"
+00:30:30 [build] directory: /run/media/jcotrina/Nuevo vol/git-repos/portafolio/dist/
+00:30:30 [build] Collecting build info...
+00:30:30 [build] ✓ Completed in 172ms.
+00:30:30 [build] Building static entrypoints...
+00:30:31 [WARN] [vite] warnings when minifying css:
+▲ [WARNING] Expected percentage but found ":" [css-syntax-error]
+
+    <stdin>:1593:303:
+      1593 │ ...color: rgb(255 255 255 / 0);} :is(.dark 0%) {background-color...
+           ╵                                  ^
+
+
+00:30:31 [vite] ✓ built in 912ms
+00:30:31 [build] ✓ Completed in 940ms.
+
+ building client (vite) 
+00:30:31 [vite] transforming...
+00:30:31 [vite] ✓ 12 modules transformed.
+00:30:31 [vite] rendering chunks...
+00:30:31 [vite] computing gzip size...
+00:30:31 [vite] dist/_astro/hoisted.CfD_V-On.js  13.02 kB │ gzip: 4.58 kB
+00:30:31 [vite] ✓ built in 56ms
+
+ generating static routes 
+00:30:31 ▶ src/pages/index.astro
+00:30:31   └─ /index.html (+13ms)
+00:30:31 ✓ Completed in 22ms.
+
+[32mastro-robots-txt:[0m `robots.txt` is created.
+
+Cannot read properties of undefined (reading 'reduce')
+  Stack trace:
+    at astro:build:done (file:///run/media/jcotrina/Nuevo%20vol/git-repos/portafolio/node_modules/@astrojs/sitemap/dist/index.js:85:37)
+    at async AstroBuilder.build (file:///run/media/jcotrina/Nuevo%20vol/git-repos/portafolio/node_modules/astro/dist/core/build/index.js:145:5)
+    at async build (file:///run/media/jcotrina/Nuevo%20vol/git-repos/portafolio/node_modules/astro/dist/core/build/index.js:46:3)
+    at async runCommand (file:///run/media/jcotrina/Nuevo%20vol/git-repos/portafolio/node_modules/astro/dist/cli/index.js:136:7)

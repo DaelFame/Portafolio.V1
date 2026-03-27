@@ -1,10 +1,17 @@
 ---
-const personalImageAlt = "Miguel Ángel"
+const personalImageAlt = "Joaquin S. Cárdenas"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import GitHub from "./icons/GitHub.astro"
+
+// TODO: Preparar para i18n en siguiente fase
+const hero = {
+  name: "Joaquin S. Cárdenas",
+  title: "Financial BI & Data Strategist",
+  badge: "ex-KPMG #1 Training | SSN Holder",
+}
 ---
 
 <div class="max-w-xl">
@@ -20,20 +27,24 @@ import GitHub from "./icons/GitHub.astro"
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>Listo para crecer contigo</Badge>
+      <Badge>{hero.badge}</Badge>
     </a>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hey, soy Joaquin
+    {hero.name}
   </h1>
+  <h2 class="text-2xl font-semibold text-yellow-500 dark:text-yellow-300 mt-2">
+    {hero.title}
+  </h2>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-      Autodidacta, curioso y apasionado por unir <strong
-      >Contabilidad, finanzas , programación e Ingenieria</strong> Estoy formando un perfil único como <strong>analista contable-financiero</strong> que no solo entiende los números, sino que <strong>los automatiza, visualiza y mejora</strong> con herramientas como Excel, Power BI , Python y SQL.  
-      <strong>Mi objetivo es optimizar procesos y aportar valor a las empresas</strong> mediante la integración de la contabilidad y la programación. 
+      Former <strong>KPMG analyst</strong> (#1 Training Excellence), especializado en convertir datos en <strong>inteligencia de negocios medible</strong>. 
+      Mi enfoque es <strong>datificar procesos financieros complejos</strong> mediante ETL automation, Python, SQL y dashboards interactivos. 
+      Experiencia comprobada: <strong>+55% revenue growth</strong> en Toro Loco Bar & Grill mediante optimización de operaciones y BI strategy.
+      <strong>Stack:</strong> Python (Pandas/Polars/uv) • SQL (PostgreSQL) • Power BI • Linux (Fedora)
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:joaquin.data.dev@gmail.com">

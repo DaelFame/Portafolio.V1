@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "name": "Joaquin S. Cárdenas",
+    "title": "Financial BI & Data Strategist",
+    "badge": "ex-KPMG #1 Training | SSN Holder",
+    "tagline": "Convirtiendo datos en decisiones | ex-KPMG | +55% ROI",
+    "cta": "Contáctame",
+    "description": "Former KPMG analyst (#1 Training Excellence), especializado en convertir datos en inteligencia de negocios medible. Mi enfoque es datificar procesos financieros complejos mediante ETL automation, Python, SQL y dashboards interactivos. Experiencia comprobada: +55% revenue growth en Toro Loco Bar & Grill mediante optimización de operaciones y BI strategy. Stack: Python (Pandas/Polars/uv) • SQL (PostgreSQL) • Power BI • Linux (Fedora)"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "intro": "Hola, soy Joaquín Cárdenas (Joaco) 👋",
+    "p1": "Mi carrera única combina Ingeniería Industrial + Contabilidad + Technology, permitiéndome entender tanto la visión estratégica como la ejecución operacional de los negocios.",
+    "p2": "Soy ex-KPMG analyst (#1 ranking en training) con expertise en convertir datos complejos en inteligencia de negocios accionable. Mi especialidad es \"datificar\" procesos financieros: automatizar pipelines ETL, crear dashboards en tiempo real y optimizar toma de decisiones mediante BI strategy.",
+    "p3": "Mi track record: +55% revenue growth en operaciones (Toro Loco), dominio de Python, SQL, Power BI, y experiencia internacional (SSN Holder, USA). Entiendo que números no son solo reportes: son historias de decisión.",
+    "p4": "Mi objetivo es trabajar en empresas que valoren la precisión, automatización y ROI medible. Si buscas alguien que datifique tus procesos y convierta información en ventaja competitiva, conversemos."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "dataEngineering": "Data Engineering",
+    "financialAnalysis": "Financial Analysis",
+    "biVisualization": "BI & Visualization",
+    "devStack": "Developer Stack"
+  },
+  "experience": {
+    "title": "Experiencia laboral",
+    "kpmg": {
+      "date": "2024 - Presente",
+      "title": "Financial BI Specialist | KPMG Training Excellence Program",
+      "company": "KPMG - Ranking #1",
+      "description": "Primer lugar en programa intensivo de training. Desarrollo de dashboards financieros complejos, automatización de ETL pipelines con Python (Pandas/Polars), modeling en Power BI, y reporting avanzado en SQL (PostgreSQL). Enfoque en business intelligence estratégica y optimización de decisiones financieras."
+    },
+    "toroLoco": {
+      "date": "Febrero 2020 - Junio 2022",
+      "title": "Revenue Operations Engineer",
+      "company": "Toro Loco Bar & Grill - Honolulu, HI (USA)",
+      "description": "Lideré automatización de procesos operacionales y análisis de datos de ventas. Implementé dashboards interactivos que resultaron en +55% incremento de revenue mediante optimización de pricing, forecasting y gestión de inventario. Desarrollé competencias en liderazgo, financial analysis y BI strategy en entorno internacional (SSN Holder)."
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "toroLocoRevenue": {
+      "title": "Revenue Engineering Dashboard - Toro Loco",
+      "description": "ETL pipeline (Python + PostgreSQL) con dashboards Power BI. Optimización de pricing, inventory forecasting. Impacto: +55% revenue growth."
+    }
+  },
+  "contact": {
+    "email": "joaquin.data.dev@gmail.com",
+    "cta": "Contáctame",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}

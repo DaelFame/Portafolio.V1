@@ -9,12 +9,13 @@ import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
+import Skills from "@/components/Skills.astro"
 
 ---
 
 <Layout
-  title="Joaquin Professional Portfolio  Data Analysis and Accounting Solutions"
-  description="Turning data into intelligent decisions. Precision, analysis, and confidence."
+  title="Joaquin S. Cárdenas | Financial BI & Data Strategist"
+  description="Financial BI Specialist | ex-KPMG #1 Training | +55% revenue growth | ETL, Python, Power BI, SQL expertise"
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -29,6 +30,14 @@ import TitleSection from "@/components/TitleSection.astro"
         Experiencia laboral
       </TitleSection>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="habilidades">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Habilidades
+      </TitleSection>
+      <Skills />
     </SectionContainer>
 
     <SectionContainer id="proyectos">
